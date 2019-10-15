@@ -1,12 +1,12 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'mn-movies-list',
+  templateUrl: './movies-list.component.html',
+  styleUrls: ['./movies-list.component.css']
 })
-export class AppComponent {
-  title: string = 'mini netflix';
+export class MoviesListComponent implements OnInit {
+
   movies: any[] = [
     {
       "Title": "My Best Friend's Wedding",
@@ -79,5 +79,12 @@ export class AppComponent {
       "Poster": "https://m.media-amazon.com/images/M/MV5BMjU0MTI1MDg5Ml5BMl5BanBnXkFtZTgwNzc2MTMzMDE@._V1_SX300.jpg"
     }
   ]
+
+
+
+  constructor() { }
+
+  ngOnInit() {
+  }
 
 }
