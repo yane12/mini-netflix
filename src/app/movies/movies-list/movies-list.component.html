@@ -1,4 +1,7 @@
-<div *ngFor='let movie of movies'>
-    <p>{{movie.Title}}</p>
-    
+<div class="row">
+    <!-- <div class="movie-container"> -->
+    <div class="col-md-3" *ngFor='let movie of movies'>
+        <mn-movies-thumbnail [movie]='movie'></mn-movies-thumbnail>
+    </div>
+    <!-- </div> -->
 </div>

@@ -1,0 +1,12 @@
+.images {
+    width: 250px;
+    height: 350px;
+}
+.well {
+    margin: 5px 5px 10px 0;
+    width: 200px;
+}
+.fav-movie {
+    color: rgb(114, 108, 108);
+    font-size: 1.125rem;
+}
